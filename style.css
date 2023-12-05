@@ -8,6 +8,36 @@
 
 .container {
     background-color: rgb(99, 209, 249);
+    width: 100%;
     height: 100vh;
+    overflow: auto;
 
+}
+
+.my-list-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: calc((100% / 7) - 10px);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    background-color: aquamarine;
+}
+
+.fizzbuzz-box {
+    background-color: yellow;
+}
+
+.fizz-box {
+    background-color: lightcoral;
+}
+
+.buzz-box {
+    background-color: greenyellow;
 }

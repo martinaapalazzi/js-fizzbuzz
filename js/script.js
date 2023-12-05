@@ -18,28 +18,37 @@ Consigli del giorno:
 */ 
 
 let number;
+let numberToPrint;
+const myList = document.getElementById ("my-list")
 
 for (number = 1; number <= 100; number++) {
 
+    let myBox = document.createElement ('div')
+    myBox.classList.add ("box")
+    
+
     if ( number % 3 == 0 && number % 5 == 0 ) {
-        console.log = ( 'FizzBuzz' );
+        numberToPrint = 'FizzBuzz';
+        myBox.classList.add ("fizzbuzz-box");
+
     } 
 
     else if ( number % 3 == 0 ) {
-        console.log =  ( 'Fizz' );
+        numberToPrint = 'Fizz';
+        myBox.classList.add ("fizz-box");
     }
 
     else if ( number % 5 == 0 ) {
-        console.log = ( 'Buzz' );
+        numberToPrint = 'Buzz';
+        myBox.classList.add ("buzz-box");
     }
     
     else {
-        console.log = (number);
+        numberToPrint = number;
     }
 
-    number = document.querySelector ('.my-list-numbers').innerHTML (number);
-
-
+    myBox.append (numberToPrint)
+    myList.append (myBox)
 }
 
 
