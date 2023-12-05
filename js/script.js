@@ -19,4 +19,7 @@ Consigli del giorno:
 
 let number = 1;
 
-for ( number = 1, number <= 100, number++ )
+for (number = 1; number <= 100; number++) {
+    console.log (number)
+}
+
